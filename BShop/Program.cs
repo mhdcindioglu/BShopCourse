@@ -1,3 +1,4 @@
+using BShop.Apis;
 using BShop.Components;
 using BShop.Data;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +17,8 @@ public class Program
 
         builder.Services.AddRazorComponents()
             .AddInteractiveWebAssemblyComponents();
+
+        builder.Services.AddEndpointsApiExplorer();
 
         var app = builder.Build();
 
@@ -39,6 +42,8 @@ public class Program
         app.MapRazorComponents<App>()
             .AddInteractiveWebAssemblyRenderMode()
             .AddAdditionalAssemblies(typeof(BShop.Client.Program).Assembly);
+
+        app.MapApiEndpoints();
 
         app.Run();
     }
