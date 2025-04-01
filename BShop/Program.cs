@@ -1,5 +1,6 @@
-using BShop.Client.Pages;
 using BShop.Components;
+using BShop.DB;
+using Microsoft.EntityFrameworkCore;
 
 namespace BShop;
 
@@ -10,6 +11,9 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
+        builder.Services.AddDbContextFactory<AppDbContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("CS")));
+
         builder.Services.AddRazorComponents()
             .AddInteractiveWebAssemblyComponents();
 
@@ -34,7 +38,7 @@ public class Program
         app.MapStaticAssets();
         app.MapRazorComponents<App>()
             .AddInteractiveWebAssemblyRenderMode()
-            .AddAdditionalAssemblies(typeof(Client._Imports).Assembly);
+            .AddAdditionalAssemblies(typeof(BShop.Client.Program).Assembly);
 
         app.Run();
     }

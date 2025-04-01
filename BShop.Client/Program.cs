@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
 namespace BShop.Client;
 
-class Program
+public static class Program
 {
     static async Task Main(string[] args)
     {
