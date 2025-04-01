@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BShop.Client", "BShop.Clien
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BShop.Shared", "BShop.Shared\BShop.Shared.csproj", "{2F7D5E9C-E5A4-4D2F-9CAB-35ACAB53C049}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BShop.DB", "BShop.DB\BShop.DB.csproj", "{3F7D5E9C-E5A4-4D2F-9CAB-35ACAB53C050}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BShop.Data", "BShop.Data\BShop.Data.csproj", "{3F7D5E9C-E5A4-4D2F-9CAB-35ACAB53C050}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

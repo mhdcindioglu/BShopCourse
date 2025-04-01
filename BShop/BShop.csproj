@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BShop.Client\BShop.Client.csproj" />
-    <ProjectReference Include="..\BShop.DB\BShop.DB.csproj" />
+    <ProjectReference Include="..\BShop.Data\BShop.Data.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.3">
       <PrivateAssets>all</PrivateAssets>

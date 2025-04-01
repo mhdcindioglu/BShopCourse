@@ -1,5 +1,5 @@
 using BShop.Components;
-using BShop.DB;
+using BShop.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace BShop;
